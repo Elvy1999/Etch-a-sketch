@@ -11,7 +11,6 @@ body{
     background-image: url("assets/pink_background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -68,7 +67,7 @@ button:focus {
     outline: none; /* Remove the default outline on focus */
 }
 button:active {
-    background-color: #21618C; /* Darker color when clicked */
+    background-color: #0d2637; /* Darker color when clicked */
 }
 
 
@@ -77,19 +76,14 @@ button:active {
 }
 
 
-
-
-
-
-
-
 .sketchArea{
     width: 600px;
     height: 600px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    
+    display: grid; /* Use CSS Grid to create the grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr)); /* Create columns dynamically */
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr)); /* Create rows dynamically */
 }
-
 
 
 footer > p{
